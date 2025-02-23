@@ -1,11 +1,11 @@
-# Nuxt.js / Nuxt UI / PayloadCMS API
+# Vue / Nuxt / Nuxt UI / Payload CMS API integration
 
 Simple example project to actually render stuff from [Payload CMS](https://payloadcms.com/), not just retrieve it.
 
 ## Goals
 
 - Use Nuxt [useFetch](https://nuxt.com/docs/getting-started/data-fetching) to retrieve.
-- Use [Nuxt MDC](https://nuxt.com/modules/mdc) components to render (in replacement for [Nuxt Content](https://content.nuxt.com/)).
+- Use [Nuxt MDC](https://nuxt.com/modules/mdc) and their [Prose*](https://github.com/nuxt-modules/mdc?tab=readme-ov-file#prose-components) components to render (in replacement for [Nuxt Content](https://content.nuxt.com/)).
 - Use Payload CMS REST API to retrieve a [Rich Text](https://payloadcms.com/docs/fields/rich-text) field based on Lexical.
 - Implement, map and render a [Nuxt UI Alert](https://ui3.nuxt.dev/components/alert) through
   a [Payload Block](https://payloadcms.com/docs/fields/blocks) mounted inside the [Rich Text](https://payloadcms.com/docs/fields/rich-text) field.
