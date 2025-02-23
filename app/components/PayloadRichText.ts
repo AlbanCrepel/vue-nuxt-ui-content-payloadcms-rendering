@@ -6,17 +6,16 @@ import {
   IS_SUBSCRIPT,
   IS_SUPERSCRIPT,
   IS_UNDERLINE,
-  type SerializedElementNode,
   type SerializedLexicalNode,
   type SerializedParagraphNode,
   type SerializedRootNode,
   type SerializedTextNode,
-  type Spread,
 } from "lexical";
 
 import type {SerializedListItemNode, SerializedListNode} from "@lexical/list";
+import type {SerializedBlockNode, SerializedLinkNode} from "~/shared/types/payload";
+import type {SerializedHeadingNode, SerializedQuoteNode} from "@lexical/rich-text";
 
-import type {SerializedHeadingNode, SerializedQuoteNode,} from "@lexical/rich-text";
 import {
   ProseA,
   ProseBlockquote,
@@ -33,10 +32,9 @@ import {
   ProseOl,
   ProseP,
   ProseStrong,
-  ProseUl
+  ProseUl,
+  UAlert
 } from "#components";
-
-import type {SerializedBlockNode, SerializedLinkNode} from "~/shared/types/payload";
 
 function parseChildren(node: SerializedLexicalNode): ReturnType<typeof h>[] | ReturnType<typeof h> | undefined {
   // Text nodes are the easiest ones, they can be stepped through.
@@ -135,8 +133,6 @@ function parseChildren(node: SerializedLexicalNode): ReturnType<typeof h>[] | Re
   }
 
   if (node.type === 'link') {
-    // I just build a relaxed type for SerializedLinkNode, which is found in @payloadcms/richtext-lexical
-    // but not easily importable without fighting additional dependency quirks.
     const _pNode = node as SerializedLinkNode
 
     switch (_pNode.fields.linkType) {
@@ -155,9 +151,15 @@ function parseChildren(node: SerializedLexicalNode): ReturnType<typeof h>[] | Re
   if (node.type === 'block') {
     const _pNode = node as SerializedBlockNode
 
-    switch(_pNode.fields.blockType) {
+    switch (_pNode.fields.blockType) {
       case 'Alert':
-        break;
+        return h(UAlert, {
+          variant: _pNode.fields.variant,
+          color: _pNode.fields.color,
+        }, {
+          title: () => _pNode.fields?.title,
+          description: () => parseRoot(_pNode.fields.description)
+        })
     }
   }
 }

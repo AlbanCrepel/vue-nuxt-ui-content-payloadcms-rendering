@@ -1,9 +1,19 @@
-<script setup lang="ts">
+<script lang="ts" setup>
 import payloadApiResult from '../data/example.json'
 </script>
 
 <template>
-  <article class="prose">
-    <PayloadRichText :content="payloadApiResult.content"/>
-  </article>
+  <div class="max-w-2xl mx-auto">
+    <div class="pt-6 bg-white px-4">
+      <article class="prose pb-60">
+        <PayloadRichText :content="payloadApiResult.content"/>
+      </article>
+    </div>
+  </div>
 </template>
+
+<style>
+body {
+  @apply bg-gray-200;
+}
+</style>
