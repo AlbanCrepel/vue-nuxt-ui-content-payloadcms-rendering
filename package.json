@@ -10,7 +10,10 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@lexical/list": "^0.25.0",
+    "@lexical/rich-text": "^0.25.0",
     "@nuxtjs/mdc": "^0.13.5",
+    "lexical": "^0.25.0",
     "nuxt": "^3.15.4",
     "vue": "latest",
     "vue-router": "latest"
