@@ -1,75 +1,26 @@
-# Nuxt Minimal Starter
+# Nuxt.js / Nuxt UI / PayloadCMS API
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Simple example project to actually render stuff from [Payload CMS](https://payloadcms.com/), not just retrieve it.
 
-## Setup
+## Goals
 
-Make sure to install dependencies:
+- Use Nuxt [useFetch](https://nuxt.com/docs/getting-started/data-fetching) to retrieve.
+- Use [Nuxt MDC](https://nuxt.com/modules/mdc) components to render (in replacement for [Nuxt Content](https://content.nuxt.com/)).
+- Use Payload CMS REST API to retrieve a [Rich Text](https://payloadcms.com/docs/fields/rich-text) field based on Lexical.
+- Implement, map and render a [Nuxt UI Alert](https://ui3.nuxt.dev/components/alert) through
+  a [Payload Block](https://payloadcms.com/docs/fields/blocks) mounted inside the [Rich Text](https://payloadcms.com/docs/fields/rich-text) field.
 
-```bash
-# npm
-npm install
+## Terminology
 
-# pnpm
-pnpm install
+Coming from all the Vue stuff, I needed to understand that what I'm trying to do is
+## Remarks
 
-# yarn
-yarn install
+While the `app/composables/usePayload.ts` is offered, this project uses a REST API snapshot result from Payload found in `data/example.json`.
+That result is a simple dump of a request of `/api/example/1?depth=1&locale=en`
+ 
+## Further references
 
-# bun
-bun install
-```
+Most findings are adaptations of different sources:
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+- [How Payload solves this through JSX](https://github.com/payloadcms/public-demo/blob/master/src/app/_components/RichText/serialize/index.tsx)
+- [How Nuxt MDC uses Prose* components that I want to use](https://github.com/nuxt-modules/mdc?tab=readme-ov-file#prose-components)
