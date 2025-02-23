@@ -37,50 +37,48 @@ import {
 } from "#components";
 
 function parseChildren(node: SerializedLexicalNode): ReturnType<typeof h>[] | ReturnType<typeof h> | undefined {
+  // Text nodes are the easiest ones, they can be stepped through.
+  // If another component is used within the text node, like the Prose* components
+  // I scope a VNode copy into _scopedVNode so we do not recurse into the callables.
   if (node.type === 'text') {
-    const _n = node as SerializedTextNode;
+    const _pNode = node as SerializedTextNode;
 
-    let _t: ReturnType<typeof h> = h('span', _n.text)
+    let _vNode: ReturnType<typeof h> = h('span', _pNode.text)
 
-    if (_n.format & IS_BOLD) {
-      const _ts = _t
-      _t = h(ProseStrong, () => _ts)
+    if (_pNode.format & IS_BOLD) {
+      const _scopedVNode = _vNode
+      _vNode = h(ProseStrong, () => _scopedVNode)
     }
 
-    if (_n.format & IS_ITALIC) {
-      const _ts = _t
+    if (_pNode.format & IS_ITALIC) {
+      const _scopedVNode = _vNode
 
-      _t = h(ProseEm, () => _ts)
+      _vNode = h(ProseEm, () => _scopedVNode)
     }
 
-    if (_n.format & IS_UNDERLINE) {
-      _t = h('span', {
-        class: 'underline'
-      }, [_t])
+    if (_pNode.format & IS_UNDERLINE) {
+      _vNode = h('span', {class: 'underline'}, [_vNode])
     }
 
-    if (_n.format & IS_SUBSCRIPT) {
-      _t = h('sub', _t)
+    if (_pNode.format & IS_SUBSCRIPT) {
+      _vNode = h('sub', _vNode)
     }
 
-    if (_n.format & IS_SUPERSCRIPT) {
-      _t = h('sup', _t)
+    if (_pNode.format & IS_SUPERSCRIPT) {
+      _vNode = h('sup', _vNode)
     }
 
-    if (_n.format & IS_STRIKETHROUGH) {
-      _t = h('span', {
-        class: 'line-through'
-      }, _t)
+    if (_pNode.format & IS_STRIKETHROUGH) {
+      _vNode = h('span', {class: 'line-through'}, _vNode)
     }
 
-    // px-1.5 py-0.5 text-sm font-mono font-medium rounded-[calc(var(--ui-radius)*1.5)] inline-block border border-[var(--ui-border-muted)] text-[var(--ui-text-highlighted)] bg-[var(--ui-bg-muted)]
-    if (_n.format & IS_CODE) {
-      const _ts = _t
+    if (_pNode.format & IS_CODE) {
+      const _scopedVNode = _vNode
 
-      _t = h(ProseCode, () => _ts)
+      _vNode = h(ProseCode, () => _scopedVNode)
     }
 
-    return _t
+    return _vNode
   }
 
   if (node.type === 'heading') {
@@ -135,6 +133,8 @@ function parseChildren(node: SerializedLexicalNode): ReturnType<typeof h>[] | Re
   }
 
   if (node.type === 'link') {
+    // I just build a relaxed type for SerializedLinkNode, which is found in @payloadcms/richtext-lexical
+    // but not easily importable without fighting additional dependency quirks.
     const _n = node as Spread<{
       fields: {
         [key: string]: any;
@@ -195,9 +195,7 @@ export default {
       return () => ''
     }
 
-    return () => h('div', [
-      ...parseRoot(props.content)
-    ])
+    return () => h('div', parseRoot(props.content))
   }
 }
 
