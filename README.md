@@ -11,6 +11,17 @@ Simple example project to actually render stuff from [Payload CMS](https://paylo
   a [Payload Block](https://payloadcms.com/docs/fields/blocks) mounted inside the [Rich Text](https://payloadcms.com/docs/fields/rich-text) field.
 - Avoid dependencies to `@payloadcms` as they are heavy and should not be required as an headless CMS REST API source.
 
+## Running the prototype
+
+Clone the repo.
+
+```shell
+npm install
+npm run dev
+```
+
+The project will boot as a single-page application on `http://localhost:3000` rending the example page.
+
 ## Remarks
 
 This repo is not a plugin, but a solution finding playground. The example is functional complete for the limited use-case I wanted.
