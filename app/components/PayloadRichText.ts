@@ -18,7 +18,6 @@ import type {SerializedListItemNode, SerializedListNode} from "@lexical/list";
 
 import type {SerializedHeadingNode, SerializedQuoteNode,} from "@lexical/rich-text";
 import {
-  LazyProseH6,
   ProseA,
   ProseBlockquote,
   ProseCode,
@@ -28,6 +27,7 @@ import {
   ProseH3,
   ProseH4,
   ProseH5,
+  ProseH6,
   ProseHr,
   ProseLi,
   ProseOl,
@@ -94,7 +94,7 @@ function parseChildren(node: SerializedLexicalNode): ReturnType<typeof h>[] | Re
       case 'h5':
         return h(ProseH5, () => _pNode.children.map(parseChildren))
       case 'h6':
-        return h(LazyProseH6, () => _pNode.children.map(parseChildren))
+        return h(ProseH6, () => _pNode.children.map(parseChildren))
       default:
         return h(ProseH1, () => _pNode.children.map(parseChildren))
     }
