@@ -9,11 +9,14 @@ Simple example project to actually render stuff from [Payload CMS](https://paylo
 - Use Payload CMS REST API to retrieve a [Rich Text](https://payloadcms.com/docs/fields/rich-text) field based on Lexical.
 - Implement, map and render a [Nuxt UI Alert](https://ui3.nuxt.dev/components/alert) through
   a [Payload Block](https://payloadcms.com/docs/fields/blocks) mounted inside the [Rich Text](https://payloadcms.com/docs/fields/rich-text) field.
+- Avoid dependencies to `@payloadcms` as they are heavy and should not be required as an headless CMS REST API source.
 
 ## Remarks
 
-This repo is not a plugin, but a solution finding playground. If you have better approaches, ideas or suggestions,
-please feel free to PR them, so others can benefit from them.
+This repo is not a plugin, but a solution finding playground. The example is functional complete for the limited use-case I wanted.
+
+If you have better approaches, ideas or suggestions, please feel free to PR them, so others can benefit from them.
+I do not care about tests, just ideas and solutions.
 
 While the `app/composables/usePayload.ts` is offered, this project uses a REST API snapshot result from Payload found in `data/example.json`.
 That result is a simple dump of a request of `/api/example/1?depth=1&locale=en`
