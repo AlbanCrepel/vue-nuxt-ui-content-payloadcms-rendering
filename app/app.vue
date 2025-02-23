@@ -4,6 +4,6 @@ import payloadApiResult from '../data/example.json'
 
 <template>
   <div>
-    <PayloadRichText :content="payloadApiResult.content" />
+    <PayloadRichText :content="payloadApiResult.content"/>
   </div>
 </template>

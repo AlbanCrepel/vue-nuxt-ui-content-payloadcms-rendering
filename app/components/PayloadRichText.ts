@@ -82,44 +82,44 @@ function parseChildren(node: SerializedLexicalNode): ReturnType<typeof h>[] | Re
   }
 
   if (node.type === 'heading') {
-    const _n = node as SerializedHeadingNode
+    const _pNode = node as SerializedHeadingNode
 
-    switch (_n.tag) {
+    switch (_pNode.tag) {
       case 'h2':
-        return h(ProseH2, () => _n.children.map(parseChildren))
+        return h(ProseH2, () => _pNode.children.map(parseChildren))
       case 'h3':
-        return h(ProseH3, () => _n.children.map(parseChildren))
+        return h(ProseH3, () => _pNode.children.map(parseChildren))
       case 'h4':
-        return h(ProseH4, () => _n.children.map(parseChildren))
+        return h(ProseH4, () => _pNode.children.map(parseChildren))
       case 'h5':
-        return h(ProseH5, () => _n.children.map(parseChildren))
+        return h(ProseH5, () => _pNode.children.map(parseChildren))
       case 'h6':
-        return h(LazyProseH6, () => _n.children.map(parseChildren))
+        return h(LazyProseH6, () => _pNode.children.map(parseChildren))
       default:
-        return h(ProseH1, () => _n.children.map(parseChildren))
+        return h(ProseH1, () => _pNode.children.map(parseChildren))
     }
   }
 
   if (node.type === 'paragraph') {
-    const _n = node as SerializedParagraphNode
+    const _pNode = node as SerializedParagraphNode
 
-    return h(ProseP, () => _n.children.map(parseChildren))
+    return h(ProseP, () => _pNode.children.map(parseChildren))
   }
 
   if (node.type === 'quote') {
-    const _n = node as SerializedQuoteNode
+    const _pNode = node as SerializedQuoteNode
 
-    return h(ProseBlockquote, () => _n.children.map(parseChildren))
+    return h(ProseBlockquote, () => _pNode.children.map(parseChildren))
   }
 
   if (node.type === 'list') {
-    const _n = node as SerializedListNode;
+    const _pNode = node as SerializedListNode;
 
-    switch (_n.tag) {
+    switch (_pNode.tag) {
       case 'ol':
-        return h(ProseOl, () => _n.children.map(parseChildren))
+        return h(ProseOl, () => _pNode.children.map(parseChildren))
       case 'ul':
-        return h(ProseUl, () => _n.children.map(parseChildren))
+        return h(ProseUl, () => _pNode.children.map(parseChildren))
     }
   }
 
@@ -128,14 +128,14 @@ function parseChildren(node: SerializedLexicalNode): ReturnType<typeof h>[] | Re
   }
 
   if (node.type === 'listitem') {
-    const _n = node as SerializedListItemNode;
-    return h(ProseLi, () => _n.children.map(parseChildren))
+    const _pNode = node as SerializedListItemNode;
+    return h(ProseLi, () => _pNode.children.map(parseChildren))
   }
 
   if (node.type === 'link') {
     // I just build a relaxed type for SerializedLinkNode, which is found in @payloadcms/richtext-lexical
     // but not easily importable without fighting additional dependency quirks.
-    const _n = node as Spread<{
+    const _pNode = node as Spread<{
       fields: {
         [key: string]: any;
         doc?: {
@@ -153,16 +153,16 @@ function parseChildren(node: SerializedLexicalNode): ReturnType<typeof h>[] | Re
       type: 'link';
     }, SerializedElementNode>;
 
-    switch (_n.fields.linkType) {
+    switch (_pNode.fields.linkType) {
       case 'custom':
         return [h(ProseA, {
-          href: _n.fields.url,
-          target: _n.fields.newTab ? '_blank' : '_self',
-        }, () => _n.children.map(parseChildren))]
+          href: _pNode.fields.url,
+          target: _pNode.fields.newTab ? '_blank' : '_self',
+        }, () => _pNode.children.map(parseChildren))]
       case 'internal':
         return [h(ProseA, {
-          href: _n.fields.url,
-        }, () => _n.children.map(parseChildren))]
+          href: _pNode.fields.url,
+        }, () => _pNode.children.map(parseChildren))]
     }
   }
 }
@@ -198,4 +198,3 @@ export default {
     return () => h('div', parseRoot(props.content))
   }
 }
-
