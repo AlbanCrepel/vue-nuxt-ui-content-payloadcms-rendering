@@ -3,7 +3,7 @@ import payloadApiResult from '../data/example.json'
 </script>
 
 <template>
-  <div>
+  <article class="prose">
     <PayloadRichText :content="payloadApiResult.content"/>
-  </div>
+  </article>
 </template>
