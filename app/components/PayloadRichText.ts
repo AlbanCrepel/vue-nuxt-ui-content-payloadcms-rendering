@@ -36,6 +36,8 @@ import {
   ProseUl
 } from "#components";
 
+import type {SerializedBlockNode, SerializedLinkNode} from "~/shared/types/payload";
+
 function parseChildren(node: SerializedLexicalNode): ReturnType<typeof h>[] | ReturnType<typeof h> | undefined {
   // Text nodes are the easiest ones, they can be stepped through.
   // If another component is used within the text node, like the Prose* components
@@ -135,23 +137,7 @@ function parseChildren(node: SerializedLexicalNode): ReturnType<typeof h>[] | Re
   if (node.type === 'link') {
     // I just build a relaxed type for SerializedLinkNode, which is found in @payloadcms/richtext-lexical
     // but not easily importable without fighting additional dependency quirks.
-    const _pNode = node as Spread<{
-      fields: {
-        [key: string]: any;
-        doc?: {
-          relationTo: string;
-          value: {
-            [key: string]: any;
-            id: string;
-          } | string;
-        } | null;
-        linkType: 'custom' | 'internal';
-        newTab: boolean;
-        url?: string;
-      };
-      id?: string;
-      type: 'link';
-    }, SerializedElementNode>;
+    const _pNode = node as SerializedLinkNode
 
     switch (_pNode.fields.linkType) {
       case 'custom':
@@ -163,6 +149,15 @@ function parseChildren(node: SerializedLexicalNode): ReturnType<typeof h>[] | Re
         return [h(ProseA, {
           href: _pNode.fields.url,
         }, () => _pNode.children.map(parseChildren))]
+    }
+  }
+
+  if (node.type === 'block') {
+    const _pNode = node as SerializedBlockNode
+
+    switch(_pNode.fields.blockType) {
+      case 'Alert':
+        break;
     }
   }
 }
