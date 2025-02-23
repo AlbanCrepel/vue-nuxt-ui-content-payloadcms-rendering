@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   future: {compatibilityVersion: 4},
   devtools: { enabled: true },
 
-  modules: ['@nuxtjs/mdc'],
+  modules: ['@nuxtjs/mdc', '@nuxt/ui'],
 
   runtimeConfig: {
     public: {
