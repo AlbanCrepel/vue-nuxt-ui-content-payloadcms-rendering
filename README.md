@@ -10,10 +10,10 @@ Simple example project to actually render stuff from [Payload CMS](https://paylo
 - Implement, map and render a [Nuxt UI Alert](https://ui3.nuxt.dev/components/alert) through
   a [Payload Block](https://payloadcms.com/docs/fields/blocks) mounted inside the [Rich Text](https://payloadcms.com/docs/fields/rich-text) field.
 
-## Terminology
-
-Coming from all the Vue stuff, I needed to understand that what I'm trying to do is
 ## Remarks
+
+This repo is not a plugin, but a solution finding playground. If you have better approaches, ideas or suggestions,
+please feel free to PR them, so others can benefit from them.
 
 While the `app/composables/usePayload.ts` is offered, this project uses a REST API snapshot result from Payload found in `data/example.json`.
 That result is a simple dump of a request of `/api/example/1?depth=1&locale=en`
