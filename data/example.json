@@ -1,0 +1,1485 @@
+{
+  "id": 1,
+  "revision": 1,
+  "releasedAt": "2025-02-12T23:00:00.000Z",
+  "content": {
+    "root": {
+      "type": "root",
+      "format": "",
+      "indent": 0,
+      "version": 1,
+      "children": [
+        {
+          "tag": "h1",
+          "type": "heading",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "mode": "normal",
+              "text": "Überschrift 1",
+              "type": "text",
+              "style": "",
+              "detail": 0,
+              "format": 0,
+              "version": 1
+            }
+          ],
+          "direction": "ltr"
+        },
+        {
+          "tag": "h2",
+          "type": "heading",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "mode": "normal",
+              "text": "Überschrift 2",
+              "type": "text",
+              "style": "",
+              "detail": 0,
+              "format": 0,
+              "version": 1
+            }
+          ],
+          "direction": "ltr"
+        },
+        {
+          "type": "paragraph",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "mode": "normal",
+              "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At atque culpa dicta hic saepe, tenetur? Ad earum iusto laborum modi nihil nisi porro quas, quia quisquam rem, temporibus tenetur unde!",
+              "type": "text",
+              "style": "",
+              "detail": 0,
+              "format": 0,
+              "version": 1
+            }
+          ],
+          "direction": "ltr",
+          "textStyle": "",
+          "textFormat": 0
+        },
+        {
+          "type": "paragraph",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "mode": "normal",
+              "text": "This is ",
+              "type": "text",
+              "style": "",
+              "detail": 0,
+              "format": 0,
+              "version": 1
+            },
+            {
+              "mode": "normal",
+              "text": "bold",
+              "type": "text",
+              "style": "",
+              "detail": 0,
+              "format": 1,
+              "version": 1
+            },
+            {
+              "mode": "normal",
+              "text": ".",
+              "type": "text",
+              "style": "",
+              "detail": 0,
+              "format": 0,
+              "version": 1
+            }
+          ],
+          "direction": "ltr",
+          "textStyle": "",
+          "textFormat": 0
+        },
+        {
+          "type": "paragraph",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "mode": "normal",
+              "text": "This is ",
+              "type": "text",
+              "style": "",
+              "detail": 0,
+              "format": 0,
+              "version": 1
+            },
+            {
+              "mode": "normal",
+              "text": "italic",
+              "type": "text",
+              "style": "",
+              "detail": 0,
+              "format": 2,
+              "version": 1
+            },
+            {
+              "mode": "normal",
+              "text": ".",
+              "type": "text",
+              "style": "",
+              "detail": 0,
+              "format": 0,
+              "version": 1
+            }
+          ],
+          "direction": "ltr",
+          "textStyle": "",
+          "textFormat": 0
+        },
+        {
+          "type": "paragraph",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "mode": "normal",
+              "text": "This is ",
+              "type": "text",
+              "style": "",
+              "detail": 0,
+              "format": 0,
+              "version": 1
+            },
+            {
+              "mode": "normal",
+              "text": "underlined",
+              "type": "text",
+              "style": "",
+              "detail": 0,
+              "format": 8,
+              "version": 1
+            },
+            {
+              "mode": "normal",
+              "text": ".",
+              "type": "text",
+              "style": "",
+              "detail": 0,
+              "format": 0,
+              "version": 1
+            }
+          ],
+          "direction": "ltr",
+          "textStyle": "",
+          "textFormat": 0
+        },
+        {
+          "type": "paragraph",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "mode": "normal",
+              "text": "This is ",
+              "type": "text",
+              "style": "",
+              "detail": 0,
+              "format": 0,
+              "version": 1
+            },
+            {
+              "mode": "normal",
+              "text": "strikethrough",
+              "type": "text",
+              "style": "",
+              "detail": 0,
+              "format": 4,
+              "version": 1
+            },
+            {
+              "mode": "normal",
+              "text": ".",
+              "type": "text",
+              "style": "",
+              "detail": 0,
+              "format": 0,
+              "version": 1
+            }
+          ],
+          "direction": "ltr",
+          "textStyle": "",
+          "textFormat": 0
+        },
+        {
+          "type": "paragraph",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "mode": "normal",
+              "text": "This is a ",
+              "type": "text",
+              "style": "",
+              "detail": 0,
+              "format": 0,
+              "version": 1
+            },
+            {
+              "mode": "normal",
+              "text": "mix",
+              "type": "text",
+              "style": "",
+              "detail": 0,
+              "format": 15,
+              "version": 1
+            },
+            {
+              "mode": "normal",
+              "text": ".",
+              "type": "text",
+              "style": "",
+              "detail": 0,
+              "format": 0,
+              "version": 1
+            }
+          ],
+          "direction": "ltr",
+          "textStyle": "",
+          "textFormat": 0
+        },
+        {
+          "type": "paragraph",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "mode": "normal",
+              "text": "This is ",
+              "type": "text",
+              "style": "",
+              "detail": 0,
+              "format": 0,
+              "version": 1
+            },
+            {
+              "mode": "normal",
+              "text": "subscript",
+              "type": "text",
+              "style": "",
+              "detail": 0,
+              "format": 32,
+              "version": 1
+            },
+            {
+              "mode": "normal",
+              "text": ".",
+              "type": "text",
+              "style": "",
+              "detail": 0,
+              "format": 0,
+              "version": 1
+            }
+          ],
+          "direction": "ltr",
+          "textStyle": "",
+          "textFormat": 0
+        },
+        {
+          "type": "paragraph",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "mode": "normal",
+              "text": "This is ",
+              "type": "text",
+              "style": "",
+              "detail": 0,
+              "format": 0,
+              "version": 1
+            },
+            {
+              "mode": "normal",
+              "text": "superscript",
+              "type": "text",
+              "style": "",
+              "detail": 0,
+              "format": 64,
+              "version": 1
+            },
+            {
+              "mode": "normal",
+              "text": ".",
+              "type": "text",
+              "style": "",
+              "detail": 0,
+              "format": 0,
+              "version": 1
+            }
+          ],
+          "direction": "ltr",
+          "textStyle": "",
+          "textFormat": 0
+        },
+        {
+          "type": "paragraph",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "mode": "normal",
+              "text": "This is ",
+              "type": "text",
+              "style": "",
+              "detail": 0,
+              "format": 0,
+              "version": 1
+            },
+            {
+              "mode": "normal",
+              "text": "<b>code</b>",
+              "type": "text",
+              "style": "",
+              "detail": 0,
+              "format": 16,
+              "version": 1
+            },
+            {
+              "mode": "normal",
+              "text": ".",
+              "type": "text",
+              "style": "",
+              "detail": 0,
+              "format": 0,
+              "version": 1
+            }
+          ],
+          "direction": "ltr",
+          "textStyle": "",
+          "textFormat": 0
+        },
+        {
+          "type": "paragraph",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "mode": "normal",
+              "text": "This is some escaped <em>HTML</em>.",
+              "type": "text",
+              "style": "",
+              "detail": 0,
+              "format": 0,
+              "version": 1
+            }
+          ],
+          "direction": "ltr",
+          "textStyle": "",
+          "textFormat": 0
+        },
+        {
+          "tag": "ul",
+          "type": "list",
+          "start": 1,
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "type": "listitem",
+              "value": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "This is UL",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": "ltr"
+            }
+          ],
+          "listType": "bullet",
+          "direction": "ltr"
+        },
+        {
+          "tag": "ol",
+          "type": "list",
+          "start": 1,
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "type": "listitem",
+              "value": 1,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "This is OL",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": "ltr"
+            }
+          ],
+          "listType": "number",
+          "direction": "ltr"
+        },
+        {
+          "type": "paragraph",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "mode": "normal",
+              "text": "This is an image:",
+              "type": "text",
+              "style": "",
+              "detail": 0,
+              "format": 0,
+              "version": 1
+            }
+          ],
+          "direction": "ltr",
+          "textStyle": "",
+          "textFormat": 0
+        },
+        {
+          "id": "67bb3866db46d7d9f1c38a81",
+          "type": "upload",
+          "value": {
+            "id": 1,
+            "alt": "Testbild",
+            "credit": {
+              "show": true,
+              "owner": "Bildnachweis",
+              "url": null,
+              "license": null
+            },
+            "updatedAt": "2025-02-23T15:01:58.355Z",
+            "createdAt": "2025-02-23T15:01:58.354Z",
+            "url": "/api/images/file/a.png",
+            "thumbnailURL": null,
+            "filename": "a.png",
+            "mimeType": "image/png",
+            "filesize": 65611,
+            "width": 600,
+            "height": 600,
+            "focalX": 50,
+            "focalY": 50
+          },
+          "fields": null,
+          "format": "",
+          "version": 3,
+          "relationTo": "images"
+        },
+        {
+          "tag": "ul",
+          "type": "list",
+          "start": 1,
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "type": "listitem",
+              "value": 1,
+              "format": "",
+              "indent": 0,
+              "checked": false,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "This is a checklist A",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": "ltr"
+            },
+            {
+              "type": "listitem",
+              "value": 2,
+              "format": "",
+              "indent": 0,
+              "checked": false,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "This is a checklist B",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": "ltr"
+            }
+          ],
+          "listType": "check",
+          "direction": "ltr"
+        },
+        {
+          "type": "quote",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "mode": "normal",
+              "text": "This is a blockquote.",
+              "type": "text",
+              "style": "",
+              "detail": 0,
+              "format": 0,
+              "version": 1
+            },
+            {
+              "type": "linebreak",
+              "version": 1
+            },
+            {
+              "mode": "normal",
+              "text": "With a second line.",
+              "type": "text",
+              "style": "",
+              "detail": 0,
+              "format": 0,
+              "version": 1
+            }
+          ],
+          "direction": "ltr"
+        },
+        {
+          "type": "paragraph",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "mode": "normal",
+              "text": "This is divider:",
+              "type": "text",
+              "style": "",
+              "detail": 0,
+              "format": 0,
+              "version": 1
+            }
+          ],
+          "direction": "ltr",
+          "textStyle": "",
+          "textFormat": 0
+        },
+        {
+          "type": "horizontalrule",
+          "version": 1
+        },
+        {
+          "type": "paragraph",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "mode": "normal",
+              "text": "This is a plain ",
+              "type": "text",
+              "style": "",
+              "detail": 0,
+              "format": 0,
+              "version": 1
+            },
+            {
+              "id": "67bb58a84c0bb0ce1c4f1d24",
+              "type": "link",
+              "fields": {
+                "url": "https://example",
+                "newTab": true,
+                "linkType": "custom"
+              },
+              "format": "",
+              "indent": 0,
+              "version": 3,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "link-label",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": "ltr"
+            },
+            {
+              "mode": "normal",
+              "text": ".",
+              "type": "text",
+              "style": "",
+              "detail": 0,
+              "format": 0,
+              "version": 1
+            }
+          ],
+          "direction": "ltr",
+          "textStyle": "",
+          "textFormat": 0
+        },
+        {
+          "type": "paragraph",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "mode": "normal",
+              "text": "This is a link relation:",
+              "type": "text",
+              "style": "",
+              "detail": 0,
+              "format": 0,
+              "version": 1
+            }
+          ],
+          "direction": "ltr",
+          "textStyle": "",
+          "textFormat": 0
+        },
+        {
+          "type": "relationship",
+          "value": {
+            "id": 1,
+            "revision": 1,
+            "releasedAt": "2025-02-12T23:00:00.000Z",
+            "changelog": {
+              "root": {
+                "type": "root",
+                "format": "",
+                "indent": 0,
+                "version": 1,
+                "children": [
+                  {
+                    "tag": "h1",
+                    "type": "heading",
+                    "format": "",
+                    "indent": 0,
+                    "version": 1,
+                    "children": [
+                      {
+                        "mode": "normal",
+                        "text": "Überschrift 1",
+                        "type": "text",
+                        "style": "",
+                        "detail": 0,
+                        "format": 0,
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr"
+                  },
+                  {
+                    "tag": "h2",
+                    "type": "heading",
+                    "format": "",
+                    "indent": 0,
+                    "version": 1,
+                    "children": [
+                      {
+                        "mode": "normal",
+                        "text": "Überschrift 2",
+                        "type": "text",
+                        "style": "",
+                        "detail": 0,
+                        "format": 0,
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr"
+                  },
+                  {
+                    "type": "paragraph",
+                    "format": "",
+                    "indent": 0,
+                    "version": 1,
+                    "children": [
+                      {
+                        "mode": "normal",
+                        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At atque culpa dicta hic saepe, tenetur? Ad earum iusto laborum modi nihil nisi porro quas, quia quisquam rem, temporibus tenetur unde!",
+                        "type": "text",
+                        "style": "",
+                        "detail": 0,
+                        "format": 0,
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "textStyle": "",
+                    "textFormat": 0
+                  },
+                  {
+                    "type": "paragraph",
+                    "format": "",
+                    "indent": 0,
+                    "version": 1,
+                    "children": [
+                      {
+                        "mode": "normal",
+                        "text": "This is ",
+                        "type": "text",
+                        "style": "",
+                        "detail": 0,
+                        "format": 0,
+                        "version": 1
+                      },
+                      {
+                        "mode": "normal",
+                        "text": "bold",
+                        "type": "text",
+                        "style": "",
+                        "detail": 0,
+                        "format": 1,
+                        "version": 1
+                      },
+                      {
+                        "mode": "normal",
+                        "text": ".",
+                        "type": "text",
+                        "style": "",
+                        "detail": 0,
+                        "format": 0,
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "textStyle": "",
+                    "textFormat": 0
+                  },
+                  {
+                    "type": "paragraph",
+                    "format": "",
+                    "indent": 0,
+                    "version": 1,
+                    "children": [
+                      {
+                        "mode": "normal",
+                        "text": "This is ",
+                        "type": "text",
+                        "style": "",
+                        "detail": 0,
+                        "format": 0,
+                        "version": 1
+                      },
+                      {
+                        "mode": "normal",
+                        "text": "italic",
+                        "type": "text",
+                        "style": "",
+                        "detail": 0,
+                        "format": 2,
+                        "version": 1
+                      },
+                      {
+                        "mode": "normal",
+                        "text": ".",
+                        "type": "text",
+                        "style": "",
+                        "detail": 0,
+                        "format": 0,
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "textStyle": "",
+                    "textFormat": 0
+                  },
+                  {
+                    "type": "paragraph",
+                    "format": "",
+                    "indent": 0,
+                    "version": 1,
+                    "children": [
+                      {
+                        "mode": "normal",
+                        "text": "This is ",
+                        "type": "text",
+                        "style": "",
+                        "detail": 0,
+                        "format": 0,
+                        "version": 1
+                      },
+                      {
+                        "mode": "normal",
+                        "text": "underlined",
+                        "type": "text",
+                        "style": "",
+                        "detail": 0,
+                        "format": 8,
+                        "version": 1
+                      },
+                      {
+                        "mode": "normal",
+                        "text": ".",
+                        "type": "text",
+                        "style": "",
+                        "detail": 0,
+                        "format": 0,
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "textStyle": "",
+                    "textFormat": 0
+                  },
+                  {
+                    "type": "paragraph",
+                    "format": "",
+                    "indent": 0,
+                    "version": 1,
+                    "children": [
+                      {
+                        "mode": "normal",
+                        "text": "This is ",
+                        "type": "text",
+                        "style": "",
+                        "detail": 0,
+                        "format": 0,
+                        "version": 1
+                      },
+                      {
+                        "mode": "normal",
+                        "text": "strikethrough",
+                        "type": "text",
+                        "style": "",
+                        "detail": 0,
+                        "format": 4,
+                        "version": 1
+                      },
+                      {
+                        "mode": "normal",
+                        "text": ".",
+                        "type": "text",
+                        "style": "",
+                        "detail": 0,
+                        "format": 0,
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "textStyle": "",
+                    "textFormat": 0
+                  },
+                  {
+                    "type": "paragraph",
+                    "format": "",
+                    "indent": 0,
+                    "version": 1,
+                    "children": [
+                      {
+                        "mode": "normal",
+                        "text": "This is a ",
+                        "type": "text",
+                        "style": "",
+                        "detail": 0,
+                        "format": 0,
+                        "version": 1
+                      },
+                      {
+                        "mode": "normal",
+                        "text": "mix",
+                        "type": "text",
+                        "style": "",
+                        "detail": 0,
+                        "format": 15,
+                        "version": 1
+                      },
+                      {
+                        "mode": "normal",
+                        "text": ".",
+                        "type": "text",
+                        "style": "",
+                        "detail": 0,
+                        "format": 0,
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "textStyle": "",
+                    "textFormat": 0
+                  },
+                  {
+                    "type": "paragraph",
+                    "format": "",
+                    "indent": 0,
+                    "version": 1,
+                    "children": [
+                      {
+                        "mode": "normal",
+                        "text": "This is ",
+                        "type": "text",
+                        "style": "",
+                        "detail": 0,
+                        "format": 0,
+                        "version": 1
+                      },
+                      {
+                        "mode": "normal",
+                        "text": "subscript",
+                        "type": "text",
+                        "style": "",
+                        "detail": 0,
+                        "format": 32,
+                        "version": 1
+                      },
+                      {
+                        "mode": "normal",
+                        "text": ".",
+                        "type": "text",
+                        "style": "",
+                        "detail": 0,
+                        "format": 0,
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "textStyle": "",
+                    "textFormat": 0
+                  },
+                  {
+                    "type": "paragraph",
+                    "format": "",
+                    "indent": 0,
+                    "version": 1,
+                    "children": [
+                      {
+                        "mode": "normal",
+                        "text": "This is ",
+                        "type": "text",
+                        "style": "",
+                        "detail": 0,
+                        "format": 0,
+                        "version": 1
+                      },
+                      {
+                        "mode": "normal",
+                        "text": "superscript",
+                        "type": "text",
+                        "style": "",
+                        "detail": 0,
+                        "format": 64,
+                        "version": 1
+                      },
+                      {
+                        "mode": "normal",
+                        "text": ".",
+                        "type": "text",
+                        "style": "",
+                        "detail": 0,
+                        "format": 0,
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "textStyle": "",
+                    "textFormat": 0
+                  },
+                  {
+                    "type": "paragraph",
+                    "format": "",
+                    "indent": 0,
+                    "version": 1,
+                    "children": [
+                      {
+                        "mode": "normal",
+                        "text": "This is ",
+                        "type": "text",
+                        "style": "",
+                        "detail": 0,
+                        "format": 0,
+                        "version": 1
+                      },
+                      {
+                        "mode": "normal",
+                        "text": "<b>code</b>",
+                        "type": "text",
+                        "style": "",
+                        "detail": 0,
+                        "format": 16,
+                        "version": 1
+                      },
+                      {
+                        "mode": "normal",
+                        "text": ".",
+                        "type": "text",
+                        "style": "",
+                        "detail": 0,
+                        "format": 0,
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "textStyle": "",
+                    "textFormat": 0
+                  },
+                  {
+                    "type": "paragraph",
+                    "format": "",
+                    "indent": 0,
+                    "version": 1,
+                    "children": [
+                      {
+                        "mode": "normal",
+                        "text": "This is some escaped <em>HTML</em>.",
+                        "type": "text",
+                        "style": "",
+                        "detail": 0,
+                        "format": 0,
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "textStyle": "",
+                    "textFormat": 0
+                  },
+                  {
+                    "tag": "ul",
+                    "type": "list",
+                    "start": 1,
+                    "format": "",
+                    "indent": 0,
+                    "version": 1,
+                    "children": [
+                      {
+                        "type": "listitem",
+                        "value": 1,
+                        "format": "",
+                        "indent": 0,
+                        "version": 1,
+                        "children": [
+                          {
+                            "mode": "normal",
+                            "text": "This is UL",
+                            "type": "text",
+                            "style": "",
+                            "detail": 0,
+                            "format": 0,
+                            "version": 1
+                          }
+                        ],
+                        "direction": "ltr"
+                      }
+                    ],
+                    "listType": "bullet",
+                    "direction": "ltr"
+                  },
+                  {
+                    "tag": "ol",
+                    "type": "list",
+                    "start": 1,
+                    "format": "",
+                    "indent": 0,
+                    "version": 1,
+                    "children": [
+                      {
+                        "type": "listitem",
+                        "value": 1,
+                        "format": "",
+                        "indent": 0,
+                        "version": 1,
+                        "children": [
+                          {
+                            "mode": "normal",
+                            "text": "This is OL",
+                            "type": "text",
+                            "style": "",
+                            "detail": 0,
+                            "format": 0,
+                            "version": 1
+                          }
+                        ],
+                        "direction": "ltr"
+                      }
+                    ],
+                    "listType": "number",
+                    "direction": "ltr"
+                  },
+                  {
+                    "type": "paragraph",
+                    "format": "",
+                    "indent": 0,
+                    "version": 1,
+                    "children": [
+                      {
+                        "mode": "normal",
+                        "text": "This is an image:",
+                        "type": "text",
+                        "style": "",
+                        "detail": 0,
+                        "format": 0,
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "textStyle": "",
+                    "textFormat": 0
+                  },
+                  {
+                    "id": "67bb3866db46d7d9f1c38a81",
+                    "type": "upload",
+                    "value": 1,
+                    "fields": null,
+                    "format": "",
+                    "version": 3,
+                    "relationTo": "images"
+                  },
+                  {
+                    "tag": "ul",
+                    "type": "list",
+                    "start": 1,
+                    "format": "",
+                    "indent": 0,
+                    "version": 1,
+                    "children": [
+                      {
+                        "type": "listitem",
+                        "value": 1,
+                        "format": "",
+                        "indent": 0,
+                        "checked": false,
+                        "version": 1,
+                        "children": [
+                          {
+                            "mode": "normal",
+                            "text": "This is a checklist A",
+                            "type": "text",
+                            "style": "",
+                            "detail": 0,
+                            "format": 0,
+                            "version": 1
+                          }
+                        ],
+                        "direction": "ltr"
+                      },
+                      {
+                        "type": "listitem",
+                        "value": 2,
+                        "format": "",
+                        "indent": 0,
+                        "checked": false,
+                        "version": 1,
+                        "children": [
+                          {
+                            "mode": "normal",
+                            "text": "This is a checklist B",
+                            "type": "text",
+                            "style": "",
+                            "detail": 0,
+                            "format": 0,
+                            "version": 1
+                          }
+                        ],
+                        "direction": "ltr"
+                      }
+                    ],
+                    "listType": "check",
+                    "direction": "ltr"
+                  },
+                  {
+                    "type": "quote",
+                    "format": "",
+                    "indent": 0,
+                    "version": 1,
+                    "children": [
+                      {
+                        "mode": "normal",
+                        "text": "This is a blockquote.",
+                        "type": "text",
+                        "style": "",
+                        "detail": 0,
+                        "format": 0,
+                        "version": 1
+                      },
+                      {
+                        "type": "linebreak",
+                        "version": 1
+                      },
+                      {
+                        "mode": "normal",
+                        "text": "With a second line.",
+                        "type": "text",
+                        "style": "",
+                        "detail": 0,
+                        "format": 0,
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr"
+                  },
+                  {
+                    "type": "paragraph",
+                    "format": "",
+                    "indent": 0,
+                    "version": 1,
+                    "children": [
+                      {
+                        "mode": "normal",
+                        "text": "This is divider:",
+                        "type": "text",
+                        "style": "",
+                        "detail": 0,
+                        "format": 0,
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "textStyle": "",
+                    "textFormat": 0
+                  },
+                  {
+                    "type": "horizontalrule",
+                    "version": 1
+                  },
+                  {
+                    "type": "paragraph",
+                    "format": "",
+                    "indent": 0,
+                    "version": 1,
+                    "children": [
+                      {
+                        "mode": "normal",
+                        "text": "This is a plain ",
+                        "type": "text",
+                        "style": "",
+                        "detail": 0,
+                        "format": 0,
+                        "version": 1
+                      },
+                      {
+                        "id": "67bb58a84c0bb0ce1c4f1d24",
+                        "type": "link",
+                        "fields": {
+                          "url": "https://example",
+                          "newTab": true,
+                          "linkType": "custom"
+                        },
+                        "format": "",
+                        "indent": 0,
+                        "version": 3,
+                        "children": [
+                          {
+                            "mode": "normal",
+                            "text": "link-label",
+                            "type": "text",
+                            "style": "",
+                            "detail": 0,
+                            "format": 0,
+                            "version": 1
+                          }
+                        ],
+                        "direction": "ltr"
+                      },
+                      {
+                        "mode": "normal",
+                        "text": ".",
+                        "type": "text",
+                        "style": "",
+                        "detail": 0,
+                        "format": 0,
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "textStyle": "",
+                    "textFormat": 0
+                  },
+                  {
+                    "type": "paragraph",
+                    "format": "",
+                    "indent": 0,
+                    "version": 1,
+                    "children": [
+                      {
+                        "mode": "normal",
+                        "text": "This is a link relation:",
+                        "type": "text",
+                        "style": "",
+                        "detail": 0,
+                        "format": 0,
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "textStyle": "",
+                    "textFormat": 0
+                  },
+                  {
+                    "type": "relationship",
+                    "value": 1,
+                    "format": "",
+                    "version": 2,
+                    "relationTo": "versions"
+                  },
+                  {
+                    "type": "block",
+                    "fields": {
+                      "id": "67b681bb89236c46393f6c81",
+                      "variant": "solid",
+                      "severity": "neutral",
+                      "blockName": "",
+                      "blockType": "Alert",
+                      "description": {
+                        "root": {
+                          "type": "root",
+                          "format": "",
+                          "indent": 0,
+                          "version": 1,
+                          "children": [
+                            {
+                              "type": "paragraph",
+                              "format": "",
+                              "indent": 0,
+                              "version": 1,
+                              "children": [
+                                {
+                                  "mode": "normal",
+                                  "text": "This is an AlertBlock",
+                                  "type": "text",
+                                  "style": "",
+                                  "detail": 0,
+                                  "format": 0,
+                                  "version": 1
+                                }
+                              ],
+                              "direction": "ltr",
+                              "textStyle": "",
+                              "textFormat": 0
+                            }
+                          ],
+                          "direction": "ltr"
+                        }
+                      }
+                    },
+                    "format": "",
+                    "version": 2
+                  },
+                  {
+                    "type": "paragraph",
+                    "format": "",
+                    "indent": 0,
+                    "version": 1,
+                    "children": [],
+                    "direction": null,
+                    "textStyle": "",
+                    "textFormat": 0
+                  }
+                ],
+                "direction": "ltr"
+              }
+            },
+            "changelog_html": "<h1>Überschrift 1</h1><h2>Überschrift 2</h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At atque culpa dicta hic saepe, tenetur? Ad earum iusto laborum modi nihil nisi porro quas, quia quisquam rem, temporibus tenetur unde!</p><p>This is <strong>bold</strong>.</p><p>This is <em>italic</em>.</p><p>This is <span style=\"text-decoration: underline\">underlined</span>.</p><p>This is <span style=\"text-decoration: line-through\">strikethrough</span>.</p><p>This is a <span style=\"text-decoration: underline\"><span style=\"text-decoration: line-through\"><em><strong>mix</strong></em></span></span>.</p><p>This is <sub>subscript</sub>.</p><p>This is <sup>superscript</sup>.</p><p>This is <code>&lt;b&gt;code&lt;/b&gt;</code>.</p><p>This is some escaped &lt;em&gt;HTML&lt;/em&gt;.</p><ul class=\"list-bullet\"><li value=1>This is UL</li></ul><ol class=\"list-number\"><li value=1>This is OL</li></ol><p>This is an image:</p><a href=\"\" rel=\"noopener noreferrer\">undefined</a><ul class=\"list-check\"><li aria-checked=false class=\"list-item-checkbox list-item-checkbox-unchecked\"\n          role=\"checkbox\"\n          tabIndex=-1\n          value=1\n      >\n      \n        <input type=\"checkbox\" id=\"9d43baa4-ce35-41d6-9286-4ea3bfacb2ad\">\n        <label for=\"9d43baa4-ce35-41d6-9286-4ea3bfacb2ad\">This is a checklist A</label><br>\n      \n\n\n          </li><li aria-checked=false class=\"list-item-checkbox list-item-checkbox-unchecked\"\n          role=\"checkbox\"\n          tabIndex=-1\n          value=2\n      >\n      \n        <input type=\"checkbox\" id=\"0a0836e4-ace2-43bc-a66c-bb6837b97d6c\">\n        <label for=\"0a0836e4-ace2-43bc-a66c-bb6837b97d6c\">This is a checklist B</label><br>\n      \n\n\n          </li></ul><blockquote>This is a blockquote.<br>With a second line.</blockquote><p>This is divider:</p><hr/><p>This is a plain <a href=\"https://example\" target=\"_blank\" rel=\"noopener noreferrer\">link-label</a>.</p><p>This is a link relation:</p><span>unknown node</span><span>unknown node</span><p></p>",
+            "updatedAt": "2025-02-23T17:20:00.394Z",
+            "createdAt": "2025-02-20T00:13:09.815Z",
+            "_status": "published"
+          },
+          "format": "",
+          "version": 2,
+          "relationTo": "versions"
+        },
+        {
+          "type": "block",
+          "fields": {
+            "id": "67b681bb89236c46393f6c81",
+            "variant": "solid",
+            "severity": "neutral",
+            "blockName": "",
+            "blockType": "Alert",
+            "description": {
+              "root": {
+                "type": "root",
+                "format": "",
+                "indent": 0,
+                "version": 1,
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "format": "",
+                    "indent": 0,
+                    "version": 1,
+                    "children": [
+                      {
+                        "mode": "normal",
+                        "text": "This is an AlertBlock",
+                        "type": "text",
+                        "style": "",
+                        "detail": 0,
+                        "format": 0,
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr",
+                    "textStyle": "",
+                    "textFormat": 0
+                  }
+                ],
+                "direction": "ltr"
+              }
+            }
+          },
+          "format": "",
+          "version": 2
+        },
+        {
+          "type": "paragraph",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [],
+          "direction": null,
+          "textStyle": "",
+          "textFormat": 0
+        }
+      ],
+      "direction": "ltr"
+    }
+  },
+  "changelog_html": "<h1>Überschrift 1</h1><h2>Überschrift 2</h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At atque culpa dicta hic saepe, tenetur? Ad earum iusto laborum modi nihil nisi porro quas, quia quisquam rem, temporibus tenetur unde!</p><p>This is <strong>bold</strong>.</p><p>This is <em>italic</em>.</p><p>This is <span style=\"text-decoration: underline\">underlined</span>.</p><p>This is <span style=\"text-decoration: line-through\">strikethrough</span>.</p><p>This is a <span style=\"text-decoration: underline\"><span style=\"text-decoration: line-through\"><em><strong>mix</strong></em></span></span>.</p><p>This is <sub>subscript</sub>.</p><p>This is <sup>superscript</sup>.</p><p>This is <code>&lt;b&gt;code&lt;/b&gt;</code>.</p><p>This is some escaped &lt;em&gt;HTML&lt;/em&gt;.</p><ul class=\"list-bullet\"><li value=1>This is UL</li></ul><ol class=\"list-number\"><li value=1>This is OL</li></ol><p>This is an image:</p><img src=\"/api/images/file/a.png\" alt=\"a.png\" width=\"600\"  height=\"600\"/><ul class=\"list-check\"><li aria-checked=false class=\"list-item-checkbox list-item-checkbox-unchecked\"\n          role=\"checkbox\"\n          tabIndex=-1\n          value=1\n      >\n      \n        <input type=\"checkbox\" id=\"95f3426c-5dab-4d85-ac5c-9ae93d7a3fd7\">\n        <label for=\"95f3426c-5dab-4d85-ac5c-9ae93d7a3fd7\">This is a checklist A</label><br>\n      \n\n\n          </li><li aria-checked=false class=\"list-item-checkbox list-item-checkbox-unchecked\"\n          role=\"checkbox\"\n          tabIndex=-1\n          value=2\n      >\n      \n        <input type=\"checkbox\" id=\"1015220b-06b5-48e6-80e3-6bc9a3e184f0\">\n        <label for=\"1015220b-06b5-48e6-80e3-6bc9a3e184f0\">This is a checklist B</label><br>\n      \n\n\n          </li></ul><blockquote>This is a blockquote.<br>With a second line.</blockquote><p>This is divider:</p><hr/><p>This is a plain <a href=\"https://example\" target=\"_blank\" rel=\"noopener noreferrer\">link-label</a>.</p><p>This is a link relation:</p><span>unknown node</span><span>unknown node</span><p></p>",
+  "updatedAt": "2025-02-23T17:20:00.394Z",
+  "createdAt": "2025-02-20T00:13:09.815Z",
+  "_status": "published"
+}
