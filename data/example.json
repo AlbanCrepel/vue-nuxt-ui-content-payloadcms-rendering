@@ -48,6 +48,25 @@
           "direction": "ltr"
         },
         {
+          "tag": "h3",
+          "type": "heading",
+          "format": "",
+          "indent": 0,
+          "version": 1,
+          "children": [
+            {
+              "mode": "normal",
+              "text": "Überschrift 3",
+              "type": "text",
+              "style": "",
+              "detail": 0,
+              "format": 0,
+              "version": 1
+            }
+          ],
+          "direction": "ltr"
+        },
+        {
           "type": "paragraph",
           "format": "",
           "indent": 0,
@@ -408,12 +427,72 @@
               "children": [
                 {
                   "mode": "normal",
-                  "text": "This is UL",
+                  "text": "This is UL 1",
                   "type": "text",
                   "style": "",
                   "detail": 0,
                   "format": 0,
                   "version": 1
+                }
+              ],
+              "direction": "ltr"
+            },
+            {
+              "type": "listitem",
+              "value": 2,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "This is UL 2",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": "ltr"
+            },
+            {
+              "type": "listitem",
+              "value": 3,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "tag": "ul",
+                  "type": "list",
+                  "start": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "type": "listitem",
+                      "value": 1,
+                      "format": "",
+                      "indent": 1,
+                      "version": 1,
+                      "children": [
+                        {
+                          "mode": "normal",
+                          "text": "This is UL 2 sub",
+                          "type": "text",
+                          "style": "",
+                          "detail": 0,
+                          "format": 0,
+                          "version": 1
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  ],
+                  "listType": "bullet",
+                  "direction": "ltr"
                 }
               ],
               "direction": "ltr"
@@ -439,12 +518,72 @@
               "children": [
                 {
                   "mode": "normal",
-                  "text": "This is OL",
+                  "text": "This is OL 1",
                   "type": "text",
                   "style": "",
                   "detail": 0,
                   "format": 0,
                   "version": 1
+                }
+              ],
+              "direction": "ltr"
+            },
+            {
+              "type": "listitem",
+              "value": 2,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "mode": "normal",
+                  "text": "This is OL 2",
+                  "type": "text",
+                  "style": "",
+                  "detail": 0,
+                  "format": 0,
+                  "version": 1
+                }
+              ],
+              "direction": "ltr"
+            },
+            {
+              "type": "listitem",
+              "value": 3,
+              "format": "",
+              "indent": 0,
+              "version": 1,
+              "children": [
+                {
+                  "tag": "ol",
+                  "type": "list",
+                  "start": 1,
+                  "format": "",
+                  "indent": 0,
+                  "version": 1,
+                  "children": [
+                    {
+                      "type": "listitem",
+                      "value": 1,
+                      "format": "",
+                      "indent": 1,
+                      "version": 1,
+                      "children": [
+                        {
+                          "mode": "normal",
+                          "text": "This is OL 2. A.",
+                          "type": "text",
+                          "style": "",
+                          "detail": 0,
+                          "format": 0,
+                          "version": 1
+                        }
+                      ],
+                      "direction": "ltr"
+                    }
+                  ],
+                  "listType": "number",
+                  "direction": "ltr"
                 }
               ],
               "direction": "ltr"
@@ -535,7 +674,7 @@
               "value": 2,
               "format": "",
               "indent": 0,
-              "checked": false,
+              "checked": true,
               "version": 1,
               "children": [
                 {
@@ -562,7 +701,43 @@
           "children": [
             {
               "mode": "normal",
-              "text": "This is a blockquote.",
+              "text": "This ",
+              "type": "text",
+              "style": "",
+              "detail": 0,
+              "format": 0,
+              "version": 1
+            },
+            {
+              "mode": "normal",
+              "text": "is",
+              "type": "text",
+              "style": "",
+              "detail": 0,
+              "format": 8,
+              "version": 1
+            },
+            {
+              "mode": "normal",
+              "text": " ",
+              "type": "text",
+              "style": "",
+              "detail": 0,
+              "format": 0,
+              "version": 1
+            },
+            {
+              "mode": "normal",
+              "text": "some",
+              "type": "text",
+              "style": "",
+              "detail": 0,
+              "format": 4,
+              "version": 1
+            },
+            {
+              "mode": "normal",
+              "text": " a blockquote.",
               "type": "text",
               "style": "",
               "detail": 0,
@@ -724,6 +899,25 @@
                       {
                         "mode": "normal",
                         "text": "Überschrift 2",
+                        "type": "text",
+                        "style": "",
+                        "detail": 0,
+                        "format": 0,
+                        "version": 1
+                      }
+                    ],
+                    "direction": "ltr"
+                  },
+                  {
+                    "tag": "h3",
+                    "type": "heading",
+                    "format": "",
+                    "indent": 0,
+                    "version": 1,
+                    "children": [
+                      {
+                        "mode": "normal",
+                        "text": "Überschrift 3",
                         "type": "text",
                         "style": "",
                         "detail": 0,
@@ -1094,12 +1288,72 @@
                         "children": [
                           {
                             "mode": "normal",
-                            "text": "This is UL",
+                            "text": "This is UL 1",
                             "type": "text",
                             "style": "",
                             "detail": 0,
                             "format": 0,
                             "version": 1
+                          }
+                        ],
+                        "direction": "ltr"
+                      },
+                      {
+                        "type": "listitem",
+                        "value": 2,
+                        "format": "",
+                        "indent": 0,
+                        "version": 1,
+                        "children": [
+                          {
+                            "mode": "normal",
+                            "text": "This is UL 2",
+                            "type": "text",
+                            "style": "",
+                            "detail": 0,
+                            "format": 0,
+                            "version": 1
+                          }
+                        ],
+                        "direction": "ltr"
+                      },
+                      {
+                        "type": "listitem",
+                        "value": 3,
+                        "format": "",
+                        "indent": 0,
+                        "version": 1,
+                        "children": [
+                          {
+                            "tag": "ul",
+                            "type": "list",
+                            "start": 1,
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                              {
+                                "type": "listitem",
+                                "value": 1,
+                                "format": "",
+                                "indent": 1,
+                                "version": 1,
+                                "children": [
+                                  {
+                                    "mode": "normal",
+                                    "text": "This is UL 2 sub",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                  }
+                                ],
+                                "direction": "ltr"
+                              }
+                            ],
+                            "listType": "bullet",
+                            "direction": "ltr"
                           }
                         ],
                         "direction": "ltr"
@@ -1125,12 +1379,72 @@
                         "children": [
                           {
                             "mode": "normal",
-                            "text": "This is OL",
+                            "text": "This is OL 1",
                             "type": "text",
                             "style": "",
                             "detail": 0,
                             "format": 0,
                             "version": 1
+                          }
+                        ],
+                        "direction": "ltr"
+                      },
+                      {
+                        "type": "listitem",
+                        "value": 2,
+                        "format": "",
+                        "indent": 0,
+                        "version": 1,
+                        "children": [
+                          {
+                            "mode": "normal",
+                            "text": "This is OL 2",
+                            "type": "text",
+                            "style": "",
+                            "detail": 0,
+                            "format": 0,
+                            "version": 1
+                          }
+                        ],
+                        "direction": "ltr"
+                      },
+                      {
+                        "type": "listitem",
+                        "value": 3,
+                        "format": "",
+                        "indent": 0,
+                        "version": 1,
+                        "children": [
+                          {
+                            "tag": "ol",
+                            "type": "list",
+                            "start": 1,
+                            "format": "",
+                            "indent": 0,
+                            "version": 1,
+                            "children": [
+                              {
+                                "type": "listitem",
+                                "value": 1,
+                                "format": "",
+                                "indent": 1,
+                                "version": 1,
+                                "children": [
+                                  {
+                                    "mode": "normal",
+                                    "text": "This is OL 2. A.",
+                                    "type": "text",
+                                    "style": "",
+                                    "detail": 0,
+                                    "format": 0,
+                                    "version": 1
+                                  }
+                                ],
+                                "direction": "ltr"
+                              }
+                            ],
+                            "listType": "number",
+                            "direction": "ltr"
                           }
                         ],
                         "direction": "ltr"
@@ -1201,7 +1515,7 @@
                         "value": 2,
                         "format": "",
                         "indent": 0,
-                        "checked": false,
+                        "checked": true,
                         "version": 1,
                         "children": [
                           {
@@ -1228,7 +1542,43 @@
                     "children": [
                       {
                         "mode": "normal",
-                        "text": "This is a blockquote.",
+                        "text": "This ",
+                        "type": "text",
+                        "style": "",
+                        "detail": 0,
+                        "format": 0,
+                        "version": 1
+                      },
+                      {
+                        "mode": "normal",
+                        "text": "is",
+                        "type": "text",
+                        "style": "",
+                        "detail": 0,
+                        "format": 8,
+                        "version": 1
+                      },
+                      {
+                        "mode": "normal",
+                        "text": " ",
+                        "type": "text",
+                        "style": "",
+                        "detail": 0,
+                        "format": 0,
+                        "version": 1
+                      },
+                      {
+                        "mode": "normal",
+                        "text": "some",
+                        "type": "text",
+                        "style": "",
+                        "detail": 0,
+                        "format": 4,
+                        "version": 1
+                      },
+                      {
+                        "mode": "normal",
+                        "text": " a blockquote.",
                         "type": "text",
                         "style": "",
                         "detail": 0,
@@ -1360,7 +1710,7 @@
                     "fields": {
                       "id": "67b681bb89236c46393f6c81",
                       "variant": "solid",
-                      "color": "primary",
+                      "severity": "warning",
                       "blockName": "",
                       "blockType": "Alert",
                       "description": {
@@ -1421,8 +1771,8 @@
                 "direction": "ltr"
               }
             },
-            "changelog_html": "<h1>Überschrift 1</h1><h2>Überschrift 2</h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At atque culpa dicta hic saepe, tenetur? Ad earum iusto laborum modi nihil nisi porro quas, quia quisquam rem, temporibus tenetur unde!</p><p>This is <strong>bold</strong>.</p><p>This is <em>italic</em>.</p><p>This is <span style=\"text-decoration: underline\">underlined</span>.</p><p>This is <span style=\"text-decoration: line-through\">strikethrough</span>.</p><p>This is a <span style=\"text-decoration: underline\"><span style=\"text-decoration: line-through\"><em><strong>mix</strong></em></span></span>.</p><p>This is <sub>subscript</sub>.</p><p>This is <sup>superscript</sup>.</p><p>This is <code>&lt;b&gt;code&lt;/b&gt;</code>.</p><p>This is some escaped &lt;em&gt;HTML&lt;/em&gt;.</p><ul class=\"list-bullet\"><li value=1>This is UL</li></ul><ol class=\"list-number\"><li value=1>This is OL</li></ol><p>This is an image:</p><a href=\"\" rel=\"noopener noreferrer\">undefined</a><ul class=\"list-check\"><li aria-checked=false class=\"list-item-checkbox list-item-checkbox-unchecked\"\n          role=\"checkbox\"\n          tabIndex=-1\n          value=1\n      >\n      \n        <input type=\"checkbox\" id=\"deeb7a12-c739-40fa-9f57-47eeeaf2bdc3\">\n        <label for=\"deeb7a12-c739-40fa-9f57-47eeeaf2bdc3\">This is a checklist A</label><br>\n      \n\n\n          </li><li aria-checked=false class=\"list-item-checkbox list-item-checkbox-unchecked\"\n          role=\"checkbox\"\n          tabIndex=-1\n          value=2\n      >\n      \n        <input type=\"checkbox\" id=\"52b19138-877f-463d-9d5b-03e26775c9a1\">\n        <label for=\"52b19138-877f-463d-9d5b-03e26775c9a1\">This is a checklist B</label><br>\n      \n\n\n          </li></ul><blockquote>This is a blockquote.<br>With a second line.</blockquote><p>This is divider:</p><hr/><p>This is a plain <a href=\"https://example\" target=\"_blank\" rel=\"noopener noreferrer\">link-label</a>.</p><p>This is a link relation:</p><span>unknown node</span><span>unknown node</span><p></p>",
-            "updatedAt": "2025-02-23T19:51:35.241Z",
+            "changelog_html": "<h1>Überschrift 1</h1><h2>Überschrift 2</h2><h3>Überschrift 3</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At atque culpa dicta hic saepe, tenetur? Ad earum iusto laborum modi nihil nisi porro quas, quia quisquam rem, temporibus tenetur unde!</p><p>This is <strong>bold</strong>.</p><p>This is <em>italic</em>.</p><p>This is <span style=\"text-decoration: underline\">underlined</span>.</p><p>This is <span style=\"text-decoration: line-through\">strikethrough</span>.</p><p>This is a <span style=\"text-decoration: underline\"><span style=\"text-decoration: line-through\"><em><strong>mix</strong></em></span></span>.</p><p>This is <sub>subscript</sub>.</p><p>This is <sup>superscript</sup>.</p><p>This is <code>&lt;b&gt;code&lt;/b&gt;</code>.</p><p>This is some escaped &lt;em&gt;HTML&lt;/em&gt;.</p><ul class=\"list-bullet\"><li value=1>This is UL 1</li><li value=2>This is UL 2</li><li class=\"nestedListItem\" value=3><ul class=\"list-bullet\"><li value=1>This is UL 2 sub</li></ul></li></ul><ol class=\"list-number\"><li value=1>This is OL 1</li><li value=2>This is OL 2</li><li class=\"nestedListItem\" value=3><ol class=\"list-number\"><li value=1>This is OL 2. A.</li></ol></li></ol><p>This is an image:</p><a href=\"\" rel=\"noopener noreferrer\">undefined</a><ul class=\"list-check\"><li aria-checked=false class=\"list-item-checkbox list-item-checkbox-unchecked\"\n          role=\"checkbox\"\n          tabIndex=-1\n          value=1\n      >\n      \n        <input type=\"checkbox\" id=\"03dbbfd1-92ae-45c0-9ed8-7c81ada2d50a\">\n        <label for=\"03dbbfd1-92ae-45c0-9ed8-7c81ada2d50a\">This is a checklist A</label><br>\n      \n\n\n          </li><li aria-checked=true class=\"list-item-checkbox list-item-checkbox-checked\"\n          role=\"checkbox\"\n          tabIndex=-1\n          value=2\n      >\n      \n        <input type=\"checkbox\" id=\"b90b9d6d-d4f3-4e0b-9b3d-b8478f52630d\" checked>\n        <label for=\"b90b9d6d-d4f3-4e0b-9b3d-b8478f52630d\">This is a checklist B</label><br>\n      \n\n\n          </li></ul><blockquote>This <span style=\"text-decoration: underline\">is</span> <span style=\"text-decoration: line-through\">some</span> a blockquote.<br>With a second line.</blockquote><p>This is divider:</p><hr/><p>This is a plain <a href=\"https://example\" target=\"_blank\" rel=\"noopener noreferrer\">link-label</a>.</p><p>This is a link relation:</p><span>unknown node</span><span>unknown node</span><p></p>",
+            "updatedAt": "2025-02-24T09:13:25.581Z",
             "createdAt": "2025-02-20T00:13:09.815Z",
             "_status": "published"
           },
@@ -1435,7 +1785,7 @@
           "fields": {
             "id": "67b681bb89236c46393f6c81",
             "variant": "solid",
-            "color": "primary",
+            "severity": "warning",
             "blockName": "",
             "blockType": "Alert",
             "description": {
@@ -1496,8 +1846,8 @@
       "direction": "ltr"
     }
   },
-  "changelog_html": "<h1>Überschrift 1</h1><h2>Überschrift 2</h2><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At atque culpa dicta hic saepe, tenetur? Ad earum iusto laborum modi nihil nisi porro quas, quia quisquam rem, temporibus tenetur unde!</p><p>This is <strong>bold</strong>.</p><p>This is <em>italic</em>.</p><p>This is <span style=\"text-decoration: underline\">underlined</span>.</p><p>This is <span style=\"text-decoration: line-through\">strikethrough</span>.</p><p>This is a <span style=\"text-decoration: underline\"><span style=\"text-decoration: line-through\"><em><strong>mix</strong></em></span></span>.</p><p>This is <sub>subscript</sub>.</p><p>This is <sup>superscript</sup>.</p><p>This is <code>&lt;b&gt;code&lt;/b&gt;</code>.</p><p>This is some escaped &lt;em&gt;HTML&lt;/em&gt;.</p><ul class=\"list-bullet\"><li value=1>This is UL</li></ul><ol class=\"list-number\"><li value=1>This is OL</li></ol><p>This is an image:</p><img src=\"/api/images/file/a.png\" alt=\"a.png\" width=\"600\"  height=\"600\"/><ul class=\"list-check\"><li aria-checked=false class=\"list-item-checkbox list-item-checkbox-unchecked\"\n          role=\"checkbox\"\n          tabIndex=-1\n          value=1\n      >\n      \n        <input type=\"checkbox\" id=\"1eb12463-6e7f-40f3-b475-702affb16359\">\n        <label for=\"1eb12463-6e7f-40f3-b475-702affb16359\">This is a checklist A</label><br>\n      \n\n\n          </li><li aria-checked=false class=\"list-item-checkbox list-item-checkbox-unchecked\"\n          role=\"checkbox\"\n          tabIndex=-1\n          value=2\n      >\n      \n        <input type=\"checkbox\" id=\"2c5305ed-9a80-4d6e-8454-b26a57aaa857\">\n        <label for=\"2c5305ed-9a80-4d6e-8454-b26a57aaa857\">This is a checklist B</label><br>\n      \n\n\n          </li></ul><blockquote>This is a blockquote.<br>With a second line.</blockquote><p>This is divider:</p><hr/><p>This is a plain <a href=\"https://example\" target=\"_blank\" rel=\"noopener noreferrer\">link-label</a>.</p><p>This is a link relation:</p><span>unknown node</span><span>unknown node</span><p></p>",
-  "updatedAt": "2025-02-23T19:51:35.241Z",
+  "changelog_html": "<h1>Überschrift 1</h1><h2>Überschrift 2</h2><h3>Überschrift 3</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At atque culpa dicta hic saepe, tenetur? Ad earum iusto laborum modi nihil nisi porro quas, quia quisquam rem, temporibus tenetur unde!</p><p>This is <strong>bold</strong>.</p><p>This is <em>italic</em>.</p><p>This is <span style=\"text-decoration: underline\">underlined</span>.</p><p>This is <span style=\"text-decoration: line-through\">strikethrough</span>.</p><p>This is a <span style=\"text-decoration: underline\"><span style=\"text-decoration: line-through\"><em><strong>mix</strong></em></span></span>.</p><p>This is <sub>subscript</sub>.</p><p>This is <sup>superscript</sup>.</p><p>This is <code>&lt;b&gt;code&lt;/b&gt;</code>.</p><p>This is some escaped &lt;em&gt;HTML&lt;/em&gt;.</p><ul class=\"list-bullet\"><li value=1>This is UL 1</li><li value=2>This is UL 2</li><li class=\"nestedListItem\" value=3><ul class=\"list-bullet\"><li value=1>This is UL 2 sub</li></ul></li></ul><ol class=\"list-number\"><li value=1>This is OL 1</li><li value=2>This is OL 2</li><li class=\"nestedListItem\" value=3><ol class=\"list-number\"><li value=1>This is OL 2. A.</li></ol></li></ol><p>This is an image:</p><img src=\"/api/images/file/a.png\" alt=\"a.png\" width=\"600\"  height=\"600\"/><ul class=\"list-check\"><li aria-checked=false class=\"list-item-checkbox list-item-checkbox-unchecked\"\n          role=\"checkbox\"\n          tabIndex=-1\n          value=1\n      >\n      \n        <input type=\"checkbox\" id=\"aecbcbd0-13fd-4f16-b9a4-109142c7802d\">\n        <label for=\"aecbcbd0-13fd-4f16-b9a4-109142c7802d\">This is a checklist A</label><br>\n      \n\n\n          </li><li aria-checked=true class=\"list-item-checkbox list-item-checkbox-checked\"\n          role=\"checkbox\"\n          tabIndex=-1\n          value=2\n      >\n      \n        <input type=\"checkbox\" id=\"7b5b0bb6-dcd8-4bc7-9ae3-acb674b7b3aa\" checked>\n        <label for=\"7b5b0bb6-dcd8-4bc7-9ae3-acb674b7b3aa\">This is a checklist B</label><br>\n      \n\n\n          </li></ul><blockquote>This <span style=\"text-decoration: underline\">is</span> <span style=\"text-decoration: line-through\">some</span> a blockquote.<br>With a second line.</blockquote><p>This is divider:</p><hr/><p>This is a plain <a href=\"https://example\" target=\"_blank\" rel=\"noopener noreferrer\">link-label</a>.</p><p>This is a link relation:</p><span>unknown node</span><span>unknown node</span><p></p>",
+  "updatedAt": "2025-02-24T09:13:25.581Z",
   "createdAt": "2025-02-20T00:13:09.815Z",
   "_status": "published"
 }
