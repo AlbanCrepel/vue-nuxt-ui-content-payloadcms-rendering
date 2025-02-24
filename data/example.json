@@ -1710,7 +1710,7 @@
                     "fields": {
                       "id": "67b681bb89236c46393f6c81",
                       "variant": "solid",
-                      "severity": "warning",
+                      "color": "primary",
                       "blockName": "",
                       "blockType": "Alert",
                       "description": {
@@ -1785,7 +1785,7 @@
           "fields": {
             "id": "67b681bb89236c46393f6c81",
             "variant": "solid",
-            "severity": "warning",
+            "color": "primary",
             "blockName": "",
             "blockType": "Alert",
             "description": {

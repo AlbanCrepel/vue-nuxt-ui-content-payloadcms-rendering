@@ -13,10 +13,11 @@ import {
 } from "lexical";
 
 import type {SerializedListItemNode, SerializedListNode} from "@lexical/list";
-import type {SerializedBlockNode, SerializedLinkNode} from "~/shared/types/payload";
 import type {SerializedHeadingNode, SerializedQuoteNode} from "@lexical/rich-text";
+import type {SerializedBlockNode, SerializedLinkNode} from "~/shared/types/payload";
 
 import {
+  Icon,
   ProseA,
   ProseBlockquote,
   ProseCode,
@@ -36,14 +37,14 @@ import {
   UAlert
 } from "#components";
 
-function parseChildren(node: SerializedLexicalNode): ReturnType<typeof h>[] | ReturnType<typeof h> | undefined {
+function parseChildren(node: SerializedLexicalNode | SerializedBlockNode): ReturnType<typeof h>[] | ReturnType<typeof h> | string | undefined {
   // Text nodes are the easiest ones, they can be stepped through.
-  // If another component is used within the text node, like the Prose* components
+  // If another component is used within the text node, like the Prose* components,
   // I scope a VNode copy into _scopedVNode so we do not recurse into the callables.
   if (node.type === 'text') {
     const _pNode = node as SerializedTextNode;
 
-    let _vNode: ReturnType<typeof h> = h('span', _pNode.text)
+    let _vNode: ReturnType<typeof h> | string = _pNode.text
 
     if (_pNode.format & IS_BOLD) {
       const _scopedVNode = _vNode
@@ -52,7 +53,6 @@ function parseChildren(node: SerializedLexicalNode): ReturnType<typeof h>[] | Re
 
     if (_pNode.format & IS_ITALIC) {
       const _scopedVNode = _vNode
-
       _vNode = h(ProseEm, () => _scopedVNode)
     }
 
@@ -74,17 +74,26 @@ function parseChildren(node: SerializedLexicalNode): ReturnType<typeof h>[] | Re
 
     if (_pNode.format & IS_CODE) {
       const _scopedVNode = _vNode
-
       _vNode = h(ProseCode, () => _scopedVNode)
     }
 
     return _vNode
   }
 
+  if (node.type === 'linebreak') {
+    return h('br')
+  }
+
+  if (node.type === 'horizontalrule') {
+    return h(ProseHr)
+  }
+
   if (node.type === 'heading') {
     const _pNode = node as SerializedHeadingNode
 
     switch (_pNode.tag) {
+      case 'h1':
+        return h(ProseH1, () => _pNode.children.map(parseChildren))
       case 'h2':
         return h(ProseH2, () => _pNode.children.map(parseChildren))
       case 'h3':
@@ -95,41 +104,52 @@ function parseChildren(node: SerializedLexicalNode): ReturnType<typeof h>[] | Re
         return h(ProseH5, () => _pNode.children.map(parseChildren))
       case 'h6':
         return h(ProseH6, () => _pNode.children.map(parseChildren))
-      default:
-        return h(ProseH1, () => _pNode.children.map(parseChildren))
     }
   }
 
   if (node.type === 'paragraph') {
-    const _pNode = node as SerializedParagraphNode
-
-    return h(ProseP, () => _pNode.children.map(parseChildren))
+    return h(ProseP, () => (node as SerializedParagraphNode).children.map(parseChildren))
   }
 
   if (node.type === 'quote') {
-    const _pNode = node as SerializedQuoteNode
-
-    return h(ProseBlockquote, () => _pNode.children.map(parseChildren))
+    return h(ProseBlockquote, () => (node as SerializedQuoteNode).children.map(parseChildren))
   }
 
   if (node.type === 'list') {
     const _pNode = node as SerializedListNode;
 
-    switch (_pNode.tag) {
-      case 'ol':
-        return h(ProseOl, () => _pNode.children.map(parseChildren))
-      case 'ul':
-        return h(ProseUl, () => _pNode.children.map(parseChildren))
+    if (_pNode.tag === 'ol') {
+      return h(ProseOl, () => _pNode.children.map(parseChildren))
+    }
+
+    if (_pNode.tag === 'ul') {
+      const isChecklist = _pNode.children.some((child) => 'checked' in child)
+
+      return h(ProseUl, {
+        class: isChecklist ? 'pl-0 list-none' : undefined,
+      }, () => _pNode.children.map(parseChildren))
     }
   }
 
-  if (node.type === 'horizontalrule') {
-    return h(ProseHr)
-  }
-
   if (node.type === 'listitem') {
-    const _pNode = node as SerializedListItemNode;
-    return h(ProseLi, () => _pNode.children.map(parseChildren))
+    const _pNode = node as SerializedListItemNode
+
+    // Does the list item identify as a checklist item?
+    if ('checked' in _pNode) {
+      return h(ProseLi, {
+        role: 'checkbox',
+        'aria-checked': _pNode.checked
+      }, () => [
+        // Prepend a checkbox icon reflecting its state
+        h(Icon, {
+          name: _pNode.checked ? 'i-lucide-square-check-big' : 'i-lucide-square',
+          class: 'mr-2',
+        }),
+        ..._pNode.children.map(parseChildren)
+      ])
+    }
+
+    return h(ProseLi, () => (node as SerializedListItemNode).children.map(parseChildren))
   }
 
   if (node.type === 'link') {
@@ -137,14 +157,14 @@ function parseChildren(node: SerializedLexicalNode): ReturnType<typeof h>[] | Re
 
     switch (_pNode.fields.linkType) {
       case 'custom':
-        return [h(ProseA, {
+        return h(ProseA, {
           href: _pNode.fields.url,
           target: _pNode.fields.newTab ? '_blank' : '_self',
-        }, () => _pNode.children.map(parseChildren))]
+        }, () => _pNode.children.map(parseChildren))
       case 'internal':
-        return [h(ProseA, {
+        return h(ProseA, {
           href: _pNode.fields.url,
-        }, () => _pNode.children.map(parseChildren))]
+        }, () => _pNode.children.map(parseChildren))
     }
   }
 
@@ -162,6 +182,9 @@ function parseChildren(node: SerializedLexicalNode): ReturnType<typeof h>[] | Re
         })
     }
   }
+
+  // Fallback to return an empty string
+  return ''
 }
 
 function parseRoot(node: object) {
