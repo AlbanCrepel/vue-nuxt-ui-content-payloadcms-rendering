@@ -37,6 +37,10 @@ import {
   UAlert
 } from "#components";
 
+import type {VNode} from "vue";
+
+import {flatUnwrap} from "@nuxtjs/mdc/runtime";
+
 function parseChildren(node: SerializedLexicalNode | SerializedBlockNode): ReturnType<typeof h>[] | ReturnType<typeof h> | string | undefined {
   // Text nodes are the easiest ones, they can be stepped through.
   // If another component is used within the text node, like the Prose* components,
@@ -177,8 +181,9 @@ function parseChildren(node: SerializedLexicalNode | SerializedBlockNode): Retur
           variant: _pNode.fields.variant,
           color: _pNode.fields.color,
         }, {
-          title: () => _pNode.fields?.title,
-          description: () => parseRoot(_pNode.fields.description)
+          title: _pNode.fields?.title ? () => _pNode.fields?.title : undefined,
+          // Unwrap everything down to the first element, we do not want a wrapping paragraph
+          description: () => parseRoot(_pNode.fields.description, {unwrap: ['*']}),
         })
     }
   }
@@ -187,13 +192,23 @@ function parseChildren(node: SerializedLexicalNode | SerializedBlockNode): Retur
   return ''
 }
 
-function parseRoot(node: object) {
+function parseRoot(node: object, opts: { unwrap?: string[] | false } = {unwrap: false}): VNode | VNode[] {
   if ("root" in node && typeof node.root === "object") {
-    return (node.root as SerializedRootNode)?.children.map(parseChildren) ?? [];
+    const result = (node.root as SerializedRootNode)?.children.map(parseChildren) ?? [];
+
+    // There are some use-cases where we need to unwrap, like entering the "message" for the Alert component,
+    // but it will get wrapped within a p-tag that we do not want to render.
+
+    // Typing is a mess, but in the end, we can assume that, if we use "unwrap", it is because we "know" it is wrapped,
+    // so it has to be a VNode.
+    // The single case where it could be a string (by node type "text") should never occur on the root level
+    // of Lexical-constructed content.
+    return (opts.unwrap ? flatUnwrap(result as VNode[], opts.unwrap) : result) as VNode[];
   }
 
-  return []
+  return h('div')
 }
+
 
 type Props = {
   content: {
